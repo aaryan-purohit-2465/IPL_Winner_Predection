@@ -1,0 +1,21 @@
+season,date,team1,team2,toss_winner,toss_decision,venue,city,winner,result,dl_applied
+2020,2020-09-19,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,Abu Dhabi,Abu Dhabi,Chennai Super Kings,normal,0
+2020,2020-09-20,Delhi Capitals,Kings XI Punjab,Kings XI Punjab,field,Dubai,Dubai,Delhi Capitals,normal,0
+2020,2020-09-21,Sunrisers Hyderabad,Royal Challengers Bangalore,Sunrisers Hyderabad,bat,Dubai,Dubai,Royal Challengers Bangalore,normal,0
+2020,2020-09-22,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,field,Sharjah,Sharjah,Rajasthan Royals,normal,0
+2021,2021-04-09,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,Chennai,Chennai,Royal Challengers Bangalore,normal,0
+2021,2021-04-10,Chennai Super Kings,Delhi Capitals,Delhi Capitals,field,Mumbai,Mumbai,Delhi Capitals,normal,0
+2021,2021-04-11,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,field,Chennai,Chennai,Kolkata Knight Riders,normal,0
+2021,2021-04-12,Rajasthan Royals,Punjab Kings,Rajasthan Royals,field,Mumbai,Mumbai,Punjab Kings,normal,0
+2022,2022-03-26,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,Mumbai,Mumbai,Kolkata Knight Riders,normal,0
+2022,2022-03-27,Delhi Capitals,Mumbai Indians,Delhi Capitals,field,Brabourne,Mumbai,Delhi Capitals,normal,0
+2022,2022-03-28,Punjab Kings,Royal Challengers Bangalore,Punjab Kings,field,DY Patil,Navi Mumbai,Punjab Kings,normal,0
+2022,2022-03-29,Gujarat Titans,Lucknow Super Giants,Gujarat Titans,field,Wankhede,Mumbai,Gujarat Titans,normal,0
+2023,2023-03-31,Gujarat Titans,Chennai Super Kings,Gujarat Titans,field,Ahmedabad,Ahmedabad,Gujarat Titans,normal,0
+2023,2023-04-01,Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,Mohali,Mohali,Punjab Kings,normal,0
+2023,2023-04-02,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,field,Hyderabad,Hyderabad,Rajasthan Royals,normal,0
+2023,2023-04-02,Royal Challengers Bangalore,Mumbai Indians,Royal Challengers Bangalore,field,Bengaluru,Bengaluru,Royal Challengers Bangalore,normal,0
+2024,2024-03-22,Chennai Super Kings,Royal Challengers Bangalore,Royal Challengers Bangalore,bat,Chennai,Chennai,Chennai Super Kings,normal,0
+2024,2024-03-23,Punjab Kings,Delhi Capitals,Punjab Kings,field,Mullanpur,Mullanpur,Punjab Kings,normal,0
+2024,2024-03-23,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Kolkata,Kolkata,Kolkata Knight Riders,normal,0
+2024,2024-03-24,Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,bat,Jaipur,Jaipur,Rajasthan Royals,normal,0
