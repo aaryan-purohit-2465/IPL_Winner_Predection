@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Match Intelligence Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">IPL Match Data Analysis and Winner Prediction</p>
+          <h1>Turn raw IPL match history into insights, charts, and live winner forecasts.</h1>
+          <p class="hero-text">
+            Upload a match dataset, retrain the model instantly, and explore team trends through a clean
+            dashboard backed by a live Python API.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <span id="health-status">Checking backend...</span>
+          </div>
+          <form id="upload-form" class="upload-form">
+            <label for="dataset-file">Upload IPL matches CSV</label>
+            <input id="dataset-file" name="file" type="file" accept=".csv" required />
+            <button type="submit">Train With Uploaded Dataset</button>
+          </form>
+          <p class="upload-hint">Tip: use a `matches.csv` file with team, toss, venue, city, and winner columns.</p>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="panel accent">
+          <div class="panel-header">
+            <h2>Dataset Snapshot</h2>
+            <span id="dataset-name" class="pill">Loading...</span>
+          </div>
+          <div id="dataset-stats" class="stats-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Model Performance</h2>
+            <span class="pill">Random Forest</span>
+          </div>
+          <div id="metric-cards" class="stats-grid"></div>
+        </section>
+
+        <section class="panel charts-panel">
+          <div class="panel-header">
+            <h2>Team Trend Charts</h2>
+            <span class="pill">Auto-generated</span>
+          </div>
+          <div class="chart-grid">
+            <figure class="chart-card">
+              <img id="wins-chart" alt="Top winning teams chart" />
+              <figcaption>Most successful teams by match wins</figcaption>
+            </figure>
+            <figure class="chart-card">
+              <img id="toss-chart" alt="Top toss winners chart" />
+              <figcaption>Teams winning the most tosses</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="panel insights-panel">
+          <div class="panel-header">
+            <h2>Quick Insights</h2>
+            <span class="pill">Live summary</span>
+          </div>
+          <div id="insights-list" class="insights-list"></div>
+        </section>
+
+        <section class="panel prediction-panel">
+          <div class="panel-header">
+            <h2>Winner Predictor</h2>
+            <span class="pill">API powered</span>
+          </div>
+          <form id="prediction-form" class="prediction-form">
+            <div class="field-grid">
+              <label>
+                Season
+                <input id="season" name="season" type="number" required />
+              </label>
+              <label>
+                Match Year
+                <input id="match_year" name="match_year" type="number" required />
+              </label>
+              <label>
+                Team 1
+                <select id="team1" name="team1" required></select>
+              </label>
+              <label>
+                Team 2
+                <select id="team2" name="team2" required></select>
+              </label>
+              <label>
+                Toss Winner
+                <select id="toss_winner" name="toss_winner" required></select>
+              </label>
+              <label>
+                Toss Decision
+                <select id="toss_decision" name="toss_decision" required>
+                  <option value="bat">bat</option>
+                  <option value="field">field</option>
+                </select>
+              </label>
+              <label>
+                Venue
+                <select id="venue" name="venue" required></select>
+              </label>
+              <label>
+                City
+                <select id="city" name="city" required></select>
+              </label>
+              <label>
+                D/L Applied
+                <input id="dl_applied" name="dl_applied" type="number" min="0" max="1" step="1" value="0" />
+              </label>
+            </div>
+            <button type="submit">Predict Winner</button>
+          </form>
+          <div id="prediction-result" class="prediction-result empty">
+            Submit the form to see the predicted IPL winner and top confidence scores.
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
