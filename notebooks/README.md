@@ -8,4 +8,3 @@ Suggested notebooks:
 - `02_exploratory_analysis.ipynb`
 - `03_feature_engineering.ipynb`
 - `04_model_comparison.ipynb`
-
